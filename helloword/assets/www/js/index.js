@@ -48,7 +48,7 @@ $.ui.ready(function () {
         console.log("cancelled");
     });
     myScroller.enable();
-
+//git
     $.bind(myScroller, "infinite-scroll", function () {
         var self = this;
         console.log("infinite triggered");
