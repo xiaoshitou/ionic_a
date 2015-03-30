@@ -3178,14 +3178,14 @@ a.subdued {
     font-weight: 400;
     font-size: 13px;
     line-height: 32px; }
-    .bar .button.button-icon:before, .bar .button .icon:before, .bar .button.icon:before, .bar .button.icon-left:before, .bar .button.icon-right:before {
+    .bar .button.a:before, .bar .button .icon:before, .bar .button.icon:before, .bar .button.icon-left:before, .bar .button.icon-right:before {
       padding-right: 2px;
       padding-left: 2px;
       font-size: 20px;
       line-height: 32px; }
-    .bar .button.button-icon {
+    .bar .button.a {
       font-size: 17px; }
-      .bar .button.button-icon .icon:before, .bar .button.button-icon:before, .bar .button.button-icon.icon-left:before, .bar .button.button-icon.icon-right:before {
+      .bar .button.a .icon:before, .bar .button.a:before, .bar .button.a.icon-left:before, .bar .button.a.icon-right:before {
         vertical-align: top;
         font-size: 32px;
         line-height: 32px; }
@@ -3251,7 +3251,7 @@ a.subdued {
     box-shadow: none;
     color: #444;
     font-size: 17px; }
-  .bar-light .button.button-icon {
+  .bar-light .button.a {
     border-color: transparent;
     background: none; }
 
@@ -3272,7 +3272,7 @@ a.subdued {
     box-shadow: none;
     color: #444;
     font-size: 17px; }
-  .bar-stable .button.button-icon {
+  .bar-stable .button.a {
     border-color: transparent;
     background: none; }
 
@@ -3293,7 +3293,7 @@ a.subdued {
     box-shadow: none;
     color: #fff;
     font-size: 17px; }
-  .bar-positive .button.button-icon {
+  .bar-positive .button.a {
     border-color: transparent;
     background: none; }
 
@@ -3314,7 +3314,7 @@ a.subdued {
     box-shadow: none;
     color: #fff;
     font-size: 17px; }
-  .bar-calm .button.button-icon {
+  .bar-calm .button.a {
     border-color: transparent;
     background: none; }
 
@@ -3335,7 +3335,7 @@ a.subdued {
     box-shadow: none;
     color: #fff;
     font-size: 17px; }
-  .bar-assertive .button.button-icon {
+  .bar-assertive .button.a {
     border-color: transparent;
     background: none; }
 
@@ -3356,7 +3356,7 @@ a.subdued {
     box-shadow: none;
     color: #fff;
     font-size: 17px; }
-  .bar-balanced .button.button-icon {
+  .bar-balanced .button.a {
     border-color: transparent;
     background: none; }
 
@@ -3377,7 +3377,7 @@ a.subdued {
     box-shadow: none;
     color: #fff;
     font-size: 17px; }
-  .bar-energized .button.button-icon {
+  .bar-energized .button.a {
     border-color: transparent;
     background: none; }
 
@@ -3398,7 +3398,7 @@ a.subdued {
     box-shadow: none;
     color: #fff;
     font-size: 17px; }
-  .bar-royal .button.button-icon {
+  .bar-royal .button.a {
     border-color: transparent;
     background: none; }
 
@@ -3419,7 +3419,7 @@ a.subdued {
     box-shadow: none;
     color: #fff;
     font-size: 17px; }
-  .bar-dark .button.button-icon {
+  .bar-dark .button.a {
     border-color: transparent;
     background: none; }
 
@@ -6529,7 +6529,7 @@ progress {
       background: none;
       box-shadow: none;
       color: #ddd; }
-    .button.button-light.button-icon {
+    .button.button-light.a {
       border-color: transparent;
       background: none; }
     .button.button-light.button-outline {
@@ -6556,7 +6556,7 @@ progress {
       background: none;
       box-shadow: none;
       color: #b2b2b2; }
-    .button.button-stable.button-icon {
+    .button.button-stable.a {
       border-color: transparent;
       background: none; }
     .button.button-stable.button-outline {
@@ -6583,7 +6583,7 @@ progress {
       background: none;
       box-shadow: none;
       color: #387ef5; }
-    .button.button-positive.button-icon {
+    .button.button-positive.a {
       border-color: transparent;
       background: none; }
     .button.button-positive.button-outline {
@@ -6610,7 +6610,7 @@ progress {
       background: none;
       box-shadow: none;
       color: #11c1f3; }
-    .button.button-calm.button-icon {
+    .button.button-calm.a {
       border-color: transparent;
       background: none; }
     .button.button-calm.button-outline {
@@ -6637,7 +6637,7 @@ progress {
       background: none;
       box-shadow: none;
       color: #ef473a; }
-    .button.button-assertive.button-icon {
+    .button.button-assertive.a {
       border-color: transparent;
       background: none; }
     .button.button-assertive.button-outline {
@@ -6664,7 +6664,7 @@ progress {
       background: none;
       box-shadow: none;
       color: #33cd5f; }
-    .button.button-balanced.button-icon {
+    .button.button-balanced.a {
       border-color: transparent;
       background: none; }
     .button.button-balanced.button-outline {
@@ -6691,7 +6691,7 @@ progress {
       background: none;
       box-shadow: none;
       color: #ffc900; }
-    .button.button-energized.button-icon {
+    .button.button-energized.a {
       border-color: transparent;
       background: none; }
     .button.button-energized.button-outline {
@@ -6718,7 +6718,7 @@ progress {
       background: none;
       box-shadow: none;
       color: #886aea; }
-    .button.button-royal.button-icon {
+    .button.button-royal.a {
       border-color: transparent;
       background: none; }
     .button.button-royal.button-outline {
@@ -6745,7 +6745,7 @@ progress {
       background: none;
       box-shadow: none;
       color: #444; }
-    .button.button-dark.button-icon {
+    .button.button-dark.a {
       border-color: transparent;
       background: none; }
     .button.button-dark.button-outline {
@@ -6779,19 +6779,19 @@ progress {
     font-size: 32px;
     line-height: 51px; }
 
-.button-icon {
+.a {
   -webkit-transition: opacity 0.1s;
   transition: opacity 0.1s;
   padding: 0 6px;
   min-width: initial;
   border-color: transparent;
   background: none; }
-  .button-icon.button.active, .button-icon.button.activated {
+  .a.button.active, .a.button.activated {
     border-color: transparent;
     background: none;
     box-shadow: none;
     opacity: 0.3; }
-  .button-icon .icon:before, .button-icon.icon:before {
+  .a .icon:before, .a.icon:before {
     font-size: 32px; }
 
 .button-clear {
@@ -6807,7 +6807,7 @@ progress {
     background: none;
     box-shadow: none;
     color: #b2b2b2; }
-  .button-clear.button-icon {
+  .button-clear.a {
     border-color: transparent;
     background: none; }
   .button-clear.active, .button-clear.activated {

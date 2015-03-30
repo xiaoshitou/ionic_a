@@ -168,7 +168,7 @@
     font-size: $button-bar-button-font-size;
     line-height: $button-bar-button-height;
 
-    &.button-icon:before,
+    &.a:before,
     .icon:before,
     &.icon:before,
     &.icon-left:before,
@@ -179,7 +179,7 @@
       line-height: $button-bar-button-height;
     }
 
-    &.button-icon {
+    &.a {
       font-size: $bar-title-font-size;
       .icon:before,
       &:before,
