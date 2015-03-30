@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="../lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../lib/ionic/js/ionic.bundle.js"></script>
+    <script src="../cordova.js"></script>
+    <script src="../js/app1.js"></script>
+    <script src="../js/controllers1.js"></script>
+    <script src="../js/services1.js"></script>
+  </head>
+
+  <body ng-app="starter">
+  <script id="my-modal.html" type="text/ng-template">
+    <ion-modal-view>
+      <ion-header-bar >
+        <h1 class="title">My Modal title</h1>
+        <button class="button"  ng-click="closeModal()">close </button>
+      </ion-header-bar>
+      <ion-content>
+        Hello!
+        <input  />
+      </ion-content>
+    </ion-modal-view>
+  </script>
+
+  <ion-pane>
+
+    <ion-side-menus>
+      <!-- Left menu -->
+      <ion-side-menu side="left">
+        <ion-header-bar class="bar-dark item-input-inset">
+          <label class="item-input-wrapper">
+            <i class="icon ion-android-search placeholder-icon"></i>
+            <input type="search" placeholder="Search" />
+          </label>
+        </ion-header-bar>
+      </ion-side-menu>
+
+      <!-- Center content -->
+      <ion-side-menu-content>
+        <!--content header-->
+        <ion-header-bar class="bar-dark">
+          <button menu-toggle="left" class="button a icon ion-navicon" ></button>
+          <h1 class="title"> ToDo </h1>
+          <button class="button a" ng-click="addModal()">Add</button>
+        </ion-header-bar>
+        <!--content-->
+        <ion-content>
+          <!--<ion-list ng-controller="ToDoListCtrl">
+            <ion-item ng-repeat="item in toDoListItems" class="item-thumbnail-left">{{item.task}}</ion-item>
+          </ion-list>-->
+            <ion-refresher
+                    pulling-text="Pull to refresh..."
+                    on-refresh="doRefresh()" accesskey=""  >
+            </ion-refresher>
+          <ion-list ng-controller="ToDoListCtrl"
+                    show-delete="shouldShowDelete"
+                    show-reorder="shouldShowReorder"
+                    can-swipe="listCanSwipe">
+            <ion-item ng-repeat="item in items"
+                      class="item-thumbnail-left">
+              <img ng-src="">
+              <h2></h2>
+              <p>{{item}}</p>
+              <ion-option-button class="button-positive"
+                                 ng-click="share(item)">
+                Share
+              </ion-option-button>
+              <ion-option-button class="button-info"
+                                 ng-click="edit(item)">
+                Edit
+              </ion-option-button>
+              <ion-delete-button class="ion-minus-circled"
+                                 ng-click="items.splice($index, 1)">
+              </ion-delete-button>
+              <ion-reorder-button class="ion-navicon"
+                                  on-reorder="reorderItem(item, $fromIndex, $toIndex)">
+              </ion-reorder-button>
+            </ion-item>
+          </ion-list>
+          <button ng-controller="LoadingCtrl" class="button" ng-click="show()">
+            button-balanced
+          </button>
+          <ion-item ng-controller="MyController">
+            <button class="button" ng-click="openModal()">
+              button-openModal
+            </button>
+          </ion-item>
+
+        </ion-content>
+
+      </ion-side-menu-content>
+    </ion-side-menus>
+
+    <div class="bar bar-footer bar-dark">
+      <button class="button a">Left</button>
+      <div class="title"> <button ng-click="captureVideo();" class="button button-clear a icon ion-camera"></button></div>
+      <button class="button a">Right</button>
+    </div>
+  </ion-pane>
+
+  </body>
+</html>
